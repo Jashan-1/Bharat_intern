@@ -1,0 +1,13 @@
+{
+  "name": "titanic_classification-bharat_intern",
+  "version": "1.0.0",
+  "description": "Titanic_Classification-Bharat_Intern",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./templates/css/style.css -o ./templates/css/tw_style.css ",
+    "watch": "npx tailwindcss -i ./templates/css/style.css -o ./templates/css/tw_style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

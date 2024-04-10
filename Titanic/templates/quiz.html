@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DROWNING SADNESS</title>
+    <link rel="stylesheet" href="css/tw_style.css">
+</head>
+<body class="bg-blue-950 text-white">
+    
+    <nav class="bg-blue-500 p-4 text-white">
+        <div class="container mx-auto flex justify-between items-center">
+            <img src="https://www.svgrepo.com/show/402672/ship.svg" alt="SHIP" class="h-12 w-12 mr-5 border rounded-xl bg-white">
+            <a href="home.html" class="text-3xl font-bold">
+                Titanic Insights
+            </a>
+            <div class="space-x-4">
+                <a href="quiz.html" class="border rounded-lg px-4 py-2 text-white bg-blue-950 font-bold hover:bg-white hover:text-blue-950">
+                    Take the Quiz
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto my-8 p-12 bg-blue-400 rounded-lg shadow-md">
+        <h1 class="text-3xl font-bold mb-6 underline">
+            The Titanic Survival Quiz
+        </h1>
+
+        <form action="#" method="post" class="space-y-4 text-black">
+
+            <div class="flex items-center mb-4">
+                <label for="pclass" class="mr-2">Choose Passenger Class:</label>
+                <select name="pclass" id="pclass" class="p-2 border rounded">
+                    <option value="1">First Class</option>
+                    <option value="2">Second Class</option>
+                    <option value="3">Third Class</option>
+                </select>
+            </div>
+
+            <div class="flex items-center mb-4">
+                <label for="age" class="mr-2">Enter Age:</label>
+                <input type="number" name="age" id="age" class="p-2 border rounded" placeholder="Age">
+            </div>
+
+            <div class="flex items-center mb-4">
+                <label for="sibsp" class="mr-2">Enter Number of Siblings/Spouses:</label>
+                <input type="number" name="sibsp" id="sibsp" class="p-2 border rounded" placeholder="SibSp">
+            </div>
+
+            <div class="flex items-center mb-4">
+                <label for="parch" class="mr-2">Enter Number of Parents/Children:</label>
+                <input type="number" name="parch" id="parch" class="p-2 border rounded" placeholder="Parch">
+            </div>
+
+            <!-- Automatically calculated field for Family Count -->
+            <div class="flex items-center mb-4">
+                <label for="familyCount" class="mr-2">Family Count:</label>
+                <input type="text" name="familyCount" id="familyCount" class="p-2 border rounded" disabled>
+            </div>
+
+            <div class="flex items-center mb-4">
+                <label for="sex" class="mr-2">Choose Gender:</label>
+                <select name="sex" id="sex" class="p-2 border rounded">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+
+            <div class="flex items-center mb-4">
+                <label for="name" class="mr-2">Enter Full Name (with title):</label>
+                <input type="text" name="name" id="name" class="p-2 border rounded" placeholder="Full Name">
+            </div>
+
+            <div class="flex items-center mb-4">
+                <label for="embarked" class="mr-2">Choose Embarked Location:</label>
+                <select name="embarked" id="embarked" class="p-2 border rounded">
+                    <option value="C">Cherbourg</option>
+                    <option value="Q">Queenstown</option>
+                    <option value="S">Southampton</option>
+                </select>
+            </div>
+
+            <button type="submit"
+                class="bg-blue-500 text-white p-2 rounded hover:bg-blue-700 transition duration-300">Submit</button>
+
+        </form>
+    </div>
+    
+</body>
+</html>
